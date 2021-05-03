@@ -1,0 +1,137 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+body.bg-custom {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/images/typetile.png");
+  background-repeat: repeat;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+#header h1 {
+  font-size: 100px;
+  font-family: "verdana", sans-serif;
+  color: #ff6d04;
+  letter-spacing: 0.15em;
+}
+#header p {
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  color: #665c3d;
+}
+
+#form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #665c3d;
+}
+#form #survey-form {
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#form #survey-form div.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+#form #survey-form div.one div label {
+  font-family: "verdana", sans-serif;
+  font-size: 13px;
+  margin: 6px 5px;
+  color: #ff6d04;
+}
+#form #survey-form div.one div select {
+  font-family: "verdana", "sans-serif";
+  margin-top: -2px;
+  font-size: 14px;
+  color: #323232;
+}
+#form #survey-form div.one input, #form #survey-form div.one select {
+  padding: 5px 0px 5px 3px;
+  border-radius: 5px;
+  border: 1px black solid;
+  margin: 5px 0px 0px 5px;
+}
+#form #survey-form div.one input[type=number] {
+  transform: scale(1.1);
+  font-family: "verdana", sans-serif;
+  font-size: 11px;
+  margin-top: -2px;
+}
+
+.total {
+  max-width: 1400px;
+  min-height: 200px;
+  margin: 20px auto;
+}
+.total .insid {
+  max-width: 1200;
+  margin: 10px 5px;
+}
+
+#textarea div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px 50px 30px;
+  font-size: 15px;
+  font-family: "verdana", sans-serif;
+}
+#textarea textarea {
+  padding: 9px 0px 11px 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+#textarea ::placeholder {
+  color: gray;
+  font-family: "verdana", "sans-serif";
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  #survey-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: auto;
+  }
+  #survey-form .one {
+    margin-left: -35px;
+  }
+  #survey-form .one div {
+    width: 120px;
+    display: flex;
+  }
+  #survey-form .one div label {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+  #survey-form .one div select, #survey-form .one div input {
+    margin-left: 2px;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}

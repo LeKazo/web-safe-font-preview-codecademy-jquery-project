@@ -1,0 +1,157 @@
+$myOrange:rgb(255,109,4);
+$mymarronBackground:rgb(102,92,61);
+$myWhite:#fff;
+$myBlack:#000;
+
+body,html {
+  margin: 0;
+  padding: 0;
+}
+body.bg-custom{
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/jquery/images/typetile.png");
+  background-repeat: repeat;
+}
+#header{
+  //border:1px solid black;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  margin-top:40px;
+  margin-bottom:15px;
+  h1{
+    font:{
+      size:100px;
+      family:"verdana",sans-serif;
+    }
+    color:$myOrange;
+    letter-spacing:0.15em;
+  }
+  p{
+    font-size:20px;
+    letter-spacing:0.1em;
+    color:$mymarronBackground;
+  }
+}
+#form{
+  //border:1px solid black;
+  margin-top:20px;
+  margin-bottom:20px;
+  background:$mymarronBackground;
+  #survey-form{
+    //border:1px solid red;
+    max-width:1400px;
+    margin:auto;
+    padding:20px 5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    div.one{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      margin-right:20px;
+      margin-bottom:10px;
+      margin-top:10px;
+      div label{
+        font:{
+          family:"verdana",sans-serif;
+          size:13px;
+        }
+        margin:6px 5px;
+        color:$myOrange;
+      }
+      div select {
+          font-family:"verdana", "sans-serif";
+          margin-top:-2px;
+          font-size: 14px;
+          color: rgb(50, 50, 50);
+        }
+      input, select{
+        padding:5px 0px 5px 3px;
+        border-radius:5px;
+        border:1px black solid;
+        margin:5px 0px 0px 5px;
+  
+}
+      input[type="number"]{
+        transform: scale(1.1);
+        font:{
+          family:"verdana",sans-serif;
+          size:11px;
+        }
+         margin-top:-2px;
+      }
+    }
+  }
+}
+.total{
+  max-width:1400px;
+  min-height:200px;
+  margin:20px auto;
+  //border:1px solid black;
+  .insid{
+   // border:1px solid green;
+    max-width:1200;
+    margin:10px 5px;
+  }
+}
+#textarea{
+  div{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin:20px 30px 50px 30px;
+  font:{
+       size:15px;
+      family:"verdana",sans-serif;
+    }
+  }
+  textarea{
+  padding:9px 0px 11px 12px ;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  
+  max-width: 100%;
+
+  }
+  ::placeholder {
+  color: rgb(128, 128, 128);
+  font-family:"verdana", "sans-serif";
+  font-size: 20px;
+}
+}
+
+@media(max-width:800px){
+  #survey-form{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:left;
+      margin:auto;
+    .one{
+      //border:1px solid green;
+      margin-left:-35px;
+      div{
+      width:120px;
+      display:flex;
+      //border:1px solid black;
+      label{
+        justify-content:flex-start;
+        align-items:flex-start;
+        text-align:left;
+      }
+      select,input{
+        margin-left:2px;
+        justify-content:flex-end;
+        align-items:flex-end;
+      }
+    }
+    }
+  }
+}

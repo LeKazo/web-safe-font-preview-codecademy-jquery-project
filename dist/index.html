@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Web Safe Font Preview-Codecademy jQuery Project</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet">
+  <link rel='stylesheet' href='style.css'/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+	<title>Web Safe Font Preview-Codecademy jQuery Project</title>
+</head>
+  <body class="bg-custom">
+    <header id="header">
+      <h1>TYP</h1>
+      <p>TEST-DRIVE YOUR TEXT</p>
+      </header>
+    <section id="form">
+      <form method="post" id="survey-form">
+        <div class="one">
+          <div>
+            <label for="option" class="font-weight-bold text-uppercase">Font-Family</label>
+          </div>
+          <div>
+            <select id="dropdown" name="op" placeholder="">
+              <option value="" disabled selected>Select Current Font</option>
+              <option value="helvetica">Helvetica</option>
+              <option value="times">New Times Roman</option>
+              <option value="impact">Impact</option>
+              <option value="courier">Courier</option>
+              <option value="verdana">Verdana</option>
+          </select>
+          </div>
+          </div>
+        <div class="one">
+          <div>
+          <label for="number" id="number-label" class="font-weight-bold text-uppercase">FONT-Size</label>
+          </div>
+          <div>
+          <input type="number" name="age" id="number" placeholder="12" min="12" max="70" pattern="[0-9]">
+          </div>
+        </div>
+        <div class="one">
+          <div>
+          <label for="option" class="font-weight-bold text-uppercase">Font-Weight</label>
+          </div>
+          <div>
+          <select id="dropdown2" name="op" placeholder="">
+            <option value="" disabled selected>Select Font Weight</option>
+            <option value="normal">Normal</option>
+            <option value="bold">Bold</option>
+            <option value="bolder">Bolder</option>
+            <option value="lighter">Lighter</option>
+        </select>
+          </div>
+        </div> 
+      </form>
+    </section>
+    <section class="bg-white container total">
+      <div class="insid" id="newText">
+      </div>
+      </section>
+    <section id="textarea">
+       <div> <textarea id="texbox" name="box" rows="10" cols="88" placeholder="Enter your text here..." class="mx-auto"></textarea></div>
+    </section>
+    
+    
+  </body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
